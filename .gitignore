@@ -1,0 +1,17 @@
+package-lock.json
+node_modules
+coverage
+*.log
+*.tsbuildinfo
+*.tgz
+*.zip
+*.tar.gz
+*.env
+*.env.local
+*.env.development
+*.env.test
+*.env.production
+.DS_Store
+.vscode
+.idea
+*.docx

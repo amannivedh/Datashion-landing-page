@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+
+  body {
+    @apply antialiased bg-white text-charcoal;
+    font-feature-settings: 'kern' 1, 'liga' 1;
+  }
+
+  ::selection { background: #c9a96e; color: #0d0d0d; }
+}
+
+/* Marquee strip */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.marquee-track { animation: marquee 28s linear infinite; }
+.marquee-track:hover { animation-play-state: paused; }
+
+/* Image zoom on hover — applied to a wrapper */
+.img-zoom img {
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.img-zoom:hover img { transform: scale(1.04); }
+
+/* Clipping reveal for images (Zara-style wipe) */
+@keyframes clipReveal {
+  from { clip-path: inset(0 100% 0 0); }
+  to   { clip-path: inset(0 0% 0 0); }
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #c9a96e; border-radius: 4px; }
+
+/* Gold line decoration */
+.gold-line::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 2px;
+  background: #c9a96e;
+  margin-bottom: 16px;
+}
+
+/* Remove default button tap highlight on mobile */
+button, a { -webkit-tap-highlight-color: transparent; }
