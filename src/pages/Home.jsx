@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from 'react'
 import { motion, useInView, useScroll, useTransform } from 'framer-motion'
 import { ArrowRight, Check, TrendingUp, Mail, MapPin, Users, BarChart2, ChevronDown, Zap, Filter, Navigation } from 'lucide-react'
-
+//testing
 // ─── Config ───────────────────────────────────────────────────────────────────
 const ease = [0.25, 0.46, 0.45, 0.94]
 
