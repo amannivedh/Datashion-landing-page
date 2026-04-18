@@ -13,9 +13,12 @@ function ScrollToTop() {
   return null
 }
 
+const routerBasename =
+  import.meta.env.BASE_URL === '/' ? undefined : import.meta.env.BASE_URL.replace(/\/$/, '')
+
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={routerBasename}>
       <ScrollToTop />
       <div className="min-h-screen flex flex-col">
         <Nav />
