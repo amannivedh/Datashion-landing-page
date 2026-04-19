@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom'
+import BrandLogo from './BrandLogo'
 
 export default function Footer() {
   return (
-    <footer className="bg-charcoal text-white">
+    <footer className="bg-purple-950 text-white">
       {/* Affiliate disclosure */}
       <div className="border-b border-white/10 px-6 py-6">
         <div className="max-w-6xl mx-auto">
@@ -28,12 +29,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="md:col-span-2">
-            <Link to="/" className="font-serif text-2xl font-bold text-white tracking-tight block mb-3">
-              data<span className="text-gold">shion</span>
+            <Link to="/" className="inline-block mb-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-purple-950 rounded-md">
+              <BrandLogo size="lg" />
             </Link>
             <p className="text-sm text-white/40 leading-relaxed max-w-xs">
-              Fashion deals, personalised. The UK's leading destination for curated discounts from
-              top fashion retailers — all in one place.
+              Fashion-first deals for every age — kids, adults, and older shoppers — personalised by
+              size, style, and location. All in one place.
             </p>
             <p className="mt-4 text-xs text-white/25">
               Targeting launch Q3 2026 · Based in the UK

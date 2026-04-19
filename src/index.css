@@ -10,7 +10,7 @@
     font-feature-settings: 'kern' 1, 'liga' 1;
   }
 
-  ::selection { background: #c9a96e; color: #0d0d0d; }
+  ::selection { background: #7c3aed; color: #ffffff; }
 }
 
 /* Marquee strip */
@@ -20,6 +20,20 @@
 }
 .marquee-track { animation: marquee 28s linear infinite; }
 .marquee-track:hover { animation-play-state: paused; }
+
+/* Featured brands — continuous horizontal scroll (hero strip) */
+@keyframes featured-brands-marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.featured-brands-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: featured-brands-marquee 45s linear infinite;
+}
+.featured-brands-marquee-track:hover {
+  animation-play-state: paused;
+}
 
 /* Image zoom on hover — applied to a wrapper */
 .img-zoom img {
@@ -36,7 +50,7 @@
 /* Smooth scrollbar */
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: #c9a96e; border-radius: 4px; }
+::-webkit-scrollbar-thumb { background: #7c3aed; border-radius: 4px; }
 
 /* Gold line decoration */
 .gold-line::before {
@@ -44,7 +58,7 @@
   display: block;
   width: 32px;
   height: 2px;
-  background: #c9a96e;
+  background: #7c3aed;
   margin-bottom: 16px;
 }
 

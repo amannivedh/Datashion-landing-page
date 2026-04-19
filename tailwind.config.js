@@ -6,12 +6,13 @@ export default {
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
         serif: ['"Playfair Display"', 'Georgia', 'serif'],
+        brand: ['"Times New Roman"', 'Times', 'serif'],
       },
       colors: {
         gold: {
-          DEFAULT: '#c9a96e',
-          light: '#e8d5b7',
-          dark: '#a8874d',
+          DEFAULT: '#7c3aed',  // purple-600
+          light: '#a78bfa',    // purple-400
+          dark: '#5b21b6',     // purple-800
         },
         charcoal: {
           DEFAULT: '#0d0d0d',
